@@ -1,16 +1,32 @@
-# Data Quality Homework
+# Great Expectations - Pandas + Slack Notification
 
-This project implements data quality validation using Great Expectations and Pydantic.
+A comprehensive data quality validation project implementing Great Expectations for data validation with Pandas and Slack notifications.
 
-## Files Structure
+## 🚀 Features
 
-- `great_expectations_validator.py` - Great Expectations implementation with Slack notifications
-- `pydantic_validator.py` - Pydantic schema validation examples
-- `config_schema.py` - Configuration validation using Pydantic
-- `requirements.txt` - Project dependencies
-- `amazon_orders.csv` - Sample data file
+- **Great Expectations** data validation with 5 custom expectations
+- **Slack notifications** for validation results
+- **Pandas** for data manipulation
+- **Comprehensive validation reporting**
 
-## Installation
+## 📊 Validation Rules
+
+1. ✅ `order_id` must not be null
+2. ✅ `order_id` must be unique  
+3. ✅ `qty` ≥ 0
+4. ✅ `amount` ≥ 0
+5. ✅ `status` must be in allowed set: `["delivered", "shipped", "processing", "cancelled"]`
+
+## 🛠️ Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/orhankahyaoglu/Great-Expectations-Pandas-Slack-Notification.git
+cd Great-Expectations-Pandas-Slack-Notification
+
+# Create virtual environment
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+
+# Install dependencies
 pip install -r requirements.txt
