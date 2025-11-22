@@ -1,0 +1,10 @@
+order_id,qty,amount,status
+ORD001,2,29.99,delivered
+ORD002,1,15.5,shipped
+ORD003,3,45.0,processing
+ORD004,0,0.0,cancelled
+ORD005,2,39.98,delivered
+ORD006,1,10.0,shipped
+ORD007,-1,-5.0,unknown
+,2,20.0,delivered
+ORD002,3,15.0,invalid
